@@ -15,7 +15,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'maven') {
-                    sh 'mvn test'
+                    sh 'mvn test package'
                 }
             }
         }
